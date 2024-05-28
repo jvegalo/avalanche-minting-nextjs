@@ -14,8 +14,8 @@ export function Minter() {
   const activeAccount = useAccount();
   const provider = useProvider();
   const [activationError, setActivationError] = useState();
-  // Deploy the contract in the file minting-example.sol using Remix IDE, then you will get the contractAddress
-  const contractAddress = "0x4da1ffc30fa7dafbafc72a0dbaee4856093b7b2a";
+  // Replace the contract address, you can get it from Remix IDE in the deploy tab
+  const contractAddress = "0x15E49BA54478d1c2eBE857Ea7Dba6382A459AE33";
 
   const mintNFT = useCallback(async () => {
     if (!isActive || !connector.provider) {
